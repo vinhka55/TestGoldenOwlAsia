@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Rubik';
+  color: #303841;
+}
+
+li{
+  list-style: none;
+}
+img{
+  width: 100%;
+}
+
+.flex-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-around{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-start{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+
