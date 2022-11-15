@@ -4,13 +4,14 @@ import nike from '../assets/nike.png'
 function Cart(props){
     const {onAdd, onReduce, onRemove} = props
     const cartItems = JSON.parse(localStorage.getItem('cartItems'))
+    console.log(cartItems);
     const totalPrice = cartItems ? cartItems.reduce((x,y) => {return (x + y.price * y.qty)},0) : 0
     return(
         <div className='card'>
             <div className='cart'>
                 <div className='card-top'><img src={nike} alt="nike" className='card-top-logo'/></div>
                 <div className="card-title flex-between"><span>Your cart</span><span>${totalPrice.toFixed(2)}</span></div>
-                {cartItems === null || cartItems.length === 0 && <div>Your cart is empty</div>}
+                {(cartItems === null || cartItems.length === 0) && <div className='notification-empty-cart'>Your cart is empty</div>}
                 <div className='card-body'>
                 {   
                     cartItems!==null && cartItems.map((item)=>{
