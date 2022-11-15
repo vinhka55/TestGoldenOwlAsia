@@ -250,7 +250,7 @@
     margin: 0 8px;
 }
 .notification-empty-cart{
-    z-index: 22;
+    position: relative;
 }
 
 /* reponsive  */
