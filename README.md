@@ -10,8 +10,8 @@ The first, download soure code this project by command:
 Then open terminal and change directory to project
 Next type in terminal:
 ### `npm i`
-to install node modules
-final type: 
+to install node modules. 
+Final type: 
 ### `npm start`
 to run project
 
