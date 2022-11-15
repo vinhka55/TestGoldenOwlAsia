@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The first, download soure code this project by command:
 ### `git clone https://github.com/vinhka55/TestGoldenOwlAsia.git`
-Then open terminal and change directory to project
+Then open terminal and change directory to project.
 Next type in terminal:
 ### `npm i`
 to install node modules. 
