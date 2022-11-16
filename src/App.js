@@ -41,7 +41,7 @@ function App() {
     }
   }
 
-  // this function will remove product in cart by click trash
+  // this function will remove product in cart by click trash icon
   function onRemove(product){
     const newCartItems = cartItems.filter(x => x.id !== product.id)
     setCartItems(newCartItems)
