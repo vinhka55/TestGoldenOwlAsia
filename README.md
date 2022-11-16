@@ -1,12 +1,19 @@
-# Getting Started with Create React App
+# Welcome to my project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## [Live Demo](https://arcane-waters-82573.herokuapp.com)
 
-## Available Scripts
+## Guide
 
-In the project directory, you can run:
-
+The first, download soure code this project by command:
+### `git clone https://github.com/vinhka55/TestGoldenOwlAsia.git`
+Then open terminal and change directory to project.
+Next type in terminal:
+### `npm i`
+to install node modules. 
+Final type: 
 ### `npm start`
+to run project
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
