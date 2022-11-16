@@ -4,7 +4,6 @@ import nike from '../assets/nike.png'
 function Cart(props){
     const {onAdd, onReduce, onRemove} = props
     const cartItems = JSON.parse(localStorage.getItem('cartItems'))
-    console.log(cartItems);
     const totalPrice = cartItems ? cartItems.reduce((x,y) => {return (x + y.price * y.qty)},0) : 0
     return(
         <div className='card'>

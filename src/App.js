@@ -1,14 +1,15 @@
 import './App.css';
 import Products from './components/Products';
 import Cart from './components/Cart';
-import { data } from './data'
-
-import {useState} from 'react'
+import { data } from './data';
+import {useState} from 'react';
 
 function App() {
-  const {products} = data
+  const {products} = data  //data get in file data.js
   const [cartItems, setCartItems] = useState([])
   const [tempProducts, setTempProducts] = useState(products)
+
+  // this function will add product to cart and increase product in cart by click +
   function addToCart(product){
     const exist = cartItems.find(x=>x.id === product.id)
     if(exist){
@@ -23,6 +24,8 @@ function App() {
       setTempProducts(tempProducts.map(x=> x.id === product.id ? {...tempProducts.find(x=>x.id === product.id), check: true} : x))
     }
   }
+  
+  // this function will reduce item in cart by click icon -
   function onReduce(product){
     const exist = cartItems.find(x=>x.id === product.id)
     if(exist){
@@ -37,6 +40,8 @@ function App() {
       localStorage.setItem('cartItems',JSON.stringify(newCartItems))
     }
   }
+
+  // this function will remove product in cart by click trash
   function onRemove(product){
     const newCartItems = cartItems.filter(x => x.id !== product.id)
     setCartItems(newCartItems)
